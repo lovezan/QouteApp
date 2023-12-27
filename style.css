@@ -1,0 +1,122 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  transition: background 0.3s ease;
+}
+
+#quote-card {
+  /* background-color: #fff; */
+  color: rgb(255, 253, 253);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  
+  overflow: hidden;
+  max-width: 50rem;
+
+  width: 100%;
+  height: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+
+}
+#quote-card:hover::after {
+  
+  content: ""; /* Pseudo-element for the shadow */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: rgb(251, 255, 0);
+  height: 100%;
+  /* box-shadow: 0 4px 8px rgba(234, 234, 234, 0.6); */
+  /* animation: forwards 2s; */
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1; /* Place behind the card */
+  border-radius: 10px;
+  /* transition: opacity 1s ease 2s; Delayed transition for opacity */
+  opacity: 1;
+  /* transition: box-shadow 0.3s ease;Initially transparent */
+}
+div#twitterMe {
+  color: black;
+  cursor: pointer;
+
+  background-color: white;
+  position: relative;
+
+  top: 0px;
+  left: 370px;
+  /* position: absolute; */
+  /* border-radius: 50; */
+  /* top: 380px;  Adjust top positioning */
+  /* left: 55rem; Adjust left positioning */
+  width: 100px; /* Adjust width */
+  height: 22px;
+
+  margin: 20px 0px 80px 0px;
+  rotate: calc(45deg);
+}
+div#twitterMe:hover {
+  background-color: #27ae60;
+}
+.quotes {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+div#author {
+  color: #ffffff;
+  margin-top: auto;
+  position: absolute;
+  font-size: large;
+  top: 200px;
+  padding: 70px 0px 0px 0px;
+  margin: 0px 0px 110px 0px;
+}
+div#author:hover {
+  color: #e1ff00;
+  /* margin-top: auto; */
+  /* padding: 70px 0px 0px 0px; */
+  /* margin: 0px 0px 170px 0px; */
+}
+#qoutes {
+  position: absolute;
+  top: 90px;
+  padding: 0px 0px 0px 0px;
+}
+
+button#NewQoute {
+  background-color: #2ecc71;
+  position: absolute;
+  top: 362px;
+
+  color: #fff;
+  border: none;
+  /* margin: 10px 10px 10px 10px; */
+  padding: 10px 10px; /* Adjust vertical padding */
+  width: 125%;
+  height: 40px;
+  /* Set width to 100% */
+  font-size: 16px;
+  cursor: pointer;
+  /* border-radius: 5px; */
+  transition: background-color 0.3s ease;
+  margin: 0; /* Remove margin */
+}
+
+button#NewQoute:hover {
+  background-color: #27ae60;
+}
